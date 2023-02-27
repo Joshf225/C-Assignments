@@ -1,0 +1,34 @@
+//storing the functions inside the saved data(Memento);
+
+main{
+  Shape circle 
+  AddShape command = new AddShape(circle, canvas);
+  canvas = command.Exexute();
+
+}
+
+public class AddShape{
+  //Data
+  Shape shape = new Shape();
+  Canvas canvas = new Canvas();
+
+//contructor
+public class AddShape{
+  this.shape = shape;
+  this.canvas = canvas;
+}
+public class RemoveShape{
+
+  Shape data = new Shape();
+  }
+  
+  //function
+  public void Execute(){
+    canvas.push(shape);
+    return canvas;
+
+  }
+}
+
+Command is storing the data and the function
+While Memento stores just the data.

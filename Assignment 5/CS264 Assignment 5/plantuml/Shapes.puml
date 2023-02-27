@@ -1,0 +1,40 @@
+@startuml
+interface Shapes {
+    getShape() : string
+}
+class Circle {
+    + style(stroke:string, fill:string, name:string) : void
+    + getShape() : string
+}
+class Rectangle {
+    + style(stroke:string, fill:string, name:string) : void
+    + getShape() : string
+}
+class Ellipse {
+    + style(stroke:string, fill:string, name:string) : void
+    + getShape() : string
+}
+class Line {
+    + style(stroke:string, fill:string, name:string) : void
+    + getShape() : string
+}
+class Polyline {
+    + style(stroke:string, fill:string, name:string) : void
+    + getShape() : string
+}
+class Polygon {
+    + style(stroke:string, fill:string, name:string) : void
+    + getShape() : string
+}
+Shapes <|-- Circle
+Shapes <|-- Rectangle
+Rectangle o-> "rnd" Random
+Shapes <|-- Ellipse
+Ellipse o-> "rnd" Random
+Shapes <|-- Line
+Line o-> "rnd" Random
+Shapes <|-- Polyline
+Polyline o-> "rnd" Random
+Shapes <|-- Polygon
+Polygon o-> "rnd" Random
+@enduml

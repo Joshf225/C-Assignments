@@ -1,0 +1,6 @@
+@startuml
+class Receiver {
+    + DoSomething(a:string) : void
+    + DoSomethingElse(b:string) : void
+}
+@enduml

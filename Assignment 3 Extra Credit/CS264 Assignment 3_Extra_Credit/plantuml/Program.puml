@@ -1,0 +1,10 @@
+@startuml
+class Program {
+    + {static} Main(args:string[]) : void
+    {static} printHome() : void
+    {static} printHelp() : void
+    {static} printCommands() : void
+    + {static} printCanvas(canv:List<String>) : string
+    + {static} PrintStack(s:Stack<string>) : string
+}
+@enduml

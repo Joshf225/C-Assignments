@@ -1,0 +1,15 @@
+@startuml
+!include .\\Canvas.puml
+!include .\\DeleteShape.puml
+!include .\\Display.puml
+!include .\\GenerateShape.puml
+!include .\\ICommand.puml
+!include .\\Invoker.puml
+!include .\\Program.puml
+!include .\\Reciever.puml
+!include .\\Save.puml
+!include .\\Shape.puml
+!include .\\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net6.0\CS264 Assignment 4.AssemblyInfo.puml
+!include .\\obj\Debug\net6.0\CS264 Assignment 4.GlobalUsings.g.puml
+@enduml

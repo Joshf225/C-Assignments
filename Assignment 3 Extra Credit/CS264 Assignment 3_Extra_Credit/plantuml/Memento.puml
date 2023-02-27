@@ -1,0 +1,7 @@
+@startuml
+class Memento {
+    + Memento(shapesClass:ShapesClass)
+    + getDetails() : string
+}
+Memento --> "shapesClass" ShapesClass
+@enduml

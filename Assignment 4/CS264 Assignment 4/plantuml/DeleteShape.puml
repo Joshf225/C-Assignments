@@ -1,0 +1,10 @@
+@startuml
+class DeleteShape {
+    + DeleteShape(c:Canvas)
+    + Do() : void
+    + Undo() : void
+}
+ICommand <|-- DeleteShape
+DeleteShape --> "shape" Shape
+DeleteShape --> "canvas" Canvas
+@enduml

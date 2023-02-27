@@ -1,0 +1,12 @@
+@startuml
+class Canvas {
+    + shape : string <<get>> <<set>>
+    + Add(str:Shape) : void
+    + Remove() : Shape
+    + Canvas()
+    + <<override>> ToString() : string
+}
+class "Stack`1"<T> {
+}
+Canvas o-> "canvas<Shape>" "Stack`1"
+@enduml

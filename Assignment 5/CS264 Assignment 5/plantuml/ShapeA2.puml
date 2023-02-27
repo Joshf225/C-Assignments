@@ -1,0 +1,67 @@
+@startuml
+class ShapeA2 {
+    + circle(name:string, cx:int, cy:int, r:int, fill1:string, stroke1:string, i:int) : void
+    + rectangle(name:string, wX:int, wY:int, width:int, height:int, fill2:string, stroke2:string, i:int) : void
+    + ellipse(name:string, ecx:int, ecy:int, rx:int, ry:int, fill3:string, stroke3:string, i:int) : void
+    + line(name:string, lx1:int, ly1:int, lx2:int, ly2:int, lstroke:int, stroke4:string, i:int) : void
+    + polyline(name:string, p1:int, p2:int, p3:int, p4:int, p5:int, p6:int, p7:int, p8:int, i:int) : void
+    + polygon(name:string, pg1:int, pg2:int, pg3:int, pg4:int, pg5:int, pg6:int, pg7:int, pg8:int, i:int) : void
+    + path(name:string, pathd1:int, pathd2:int, i:int) : void
+    + style(stroke:string, fill:string, name:string) : void
+    + setName(n:String) : void
+    + setfill(n:String) : void
+    + setstroke(n:String) : void
+    + setStrokeWidth(i:int) : void
+    + setIndex(i:int) : void
+    + setcx(x:int) : void
+    + setcy(y:int) : void
+    + setr(x:int) : void
+    + setwX(y:int) : void
+    + setwY(r:int) : void
+    + setwidth(x:int) : void
+    + setheight(w:int) : void
+    + setecx(w:int) : void
+    + setecy(w:int) : void
+    + setrx(w:int) : void
+    + setry(w:int) : void
+    + setlx1(w:int) : void
+    + setlx2(w:int) : void
+    + setly1(w:int) : void
+    + setly2(w:int) : void
+    + setp1(w:int) : void
+    + setp2(w:int) : void
+    + setp3(w:int) : void
+    + setp4(w:int) : void
+    + setp5(w:int) : void
+    + setp6(w:int) : void
+    + setp7(w:int) : void
+    + setp8(w:int) : void
+    + setpg1(w:int) : void
+    + setpg2(w:int) : void
+    + setpg3(w:int) : void
+    + setpg4(w:int) : void
+    + setpg5(w:int) : void
+    + setpg6(w:int) : void
+    + setpg7(w:int) : void
+    + setpg8(w:int) : void
+    + setpathd1(w:int) : void
+    + setpathd2(w:int) : void
+    + getIndex() : int
+    + getName() : string
+    + getShape() : void
+    + getRectangle() : string
+    + getCircle() : string
+    + getEllipse() : string
+    + getLine() : string
+    + getPolyline() : string
+    + getPolygon() : string
+    + getPath() : string
+    + nCircle() : string
+    + nRectangle() : string
+    + nEllipse() : string
+    + nLine() : string
+    + nPolyline() : string
+    + nPolygon() : string
+    + nPath() : string
+}
+@enduml

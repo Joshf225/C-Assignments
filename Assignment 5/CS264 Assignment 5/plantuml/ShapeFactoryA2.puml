@@ -1,0 +1,12 @@
+@startuml
+class ShapeFactoryA2 {
+    + CircleFactoryMethod(name:string, cx:int, cy:int, r:int, fill:string, stroke:string, i:int) : ShapeA2
+    + RectangleFactoryMethod(name:string, wX:int, wY:int, width:int, height:int, fill:string, stroke:string, i:int) : ShapeA2
+    + EllipseFactoryMethod(name:string, ecx:int, ecy:int, rx:int, ry:int, fill:string, stroke:string, i:int) : ShapeA2
+    + LineFactoryMethod(name:string, x1:int, y1:int, x2:int, y2:int, lstroke:int, stroke:string, i:int) : ShapeA2
+    + PolylineFactoryMethod(name:string, p1:int, p2:int, p3:int, p4:int, p5:int, p6:int, p7:int, p8:int, i:int) : ShapeA2
+    + PolygonFactoryMethod(name:string, p1:int, p2:int, p3:int, p4:int, p5:int, p6:int, p7:int, p8:int, i:int) : ShapeA2
+    + PathFactoryMethod(name:string, pathd1:int, pathd2:int, i:int) : ShapeA2
+    + StyleFactoryMethod(stroke:string, fill:string, name:string) : ShapeA2
+}
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class Save {
+    + Save(c:Canvas)
+    + Do() : void
+    + Undo() : void
+}
+ICommand <|-- Save
+Save --> "canvas" Canvas
+@enduml

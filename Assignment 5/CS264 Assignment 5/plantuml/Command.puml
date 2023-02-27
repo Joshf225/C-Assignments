@@ -1,0 +1,49 @@
+@startuml
+interface ICommand {
+    Do() : void
+    Undo() : void
+}
+class Invoker {
+    + UndoCount : int <<get>>
+    + RedoCount : int <<get>>
+    + Invoker()
+    + Reset() : void
+    + Action(command:ICommand) : void
+    + Undo() : void
+    + Redo() : void
+}
+class GenerateShape {
+    + shape : string
+    + _shape : string <<get>> <<set>>
+    + GenerateShape(s:string, c:Canvas)
+    + Do() : void
+    + Undo() : void
+}
+class DeleteShape {
+    shape : string
+    + DeleteShape(c:Canvas)
+    + Do() : void
+    + Undo() : void
+}
+class Canvas {
+    + shape : string <<get>> <<set>>
+    + Add(str:string) : void
+    + Remove() : string
+    + Canvas()
+    + <<override>> ToString() : string
+}
+class Save {
+    + Save(c:Canvas)
+    + Do() : void
+    + Undo() : void
+}
+class "Stack`1"<T> {
+}
+ICommand <|-- GenerateShape
+GenerateShape --> "canvas" Canvas
+ICommand <|-- DeleteShape
+DeleteShape --> "canvas" Canvas
+Canvas o-> "canvas<string>" "Stack`1"
+ICommand <|-- Save
+Save --> "canvas" Canvas
+@enduml

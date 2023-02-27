@@ -1,0 +1,56 @@
+@startuml
+abstract class Shape {
+    + <<override>> ToString() : string
+}
+class Start {
+    + Start()
+    + <<override>> ToString() : string
+}
+class End {
+    + End()
+    + <<override>> ToString() : string
+}
+class Empty {
+    + Empty()
+    + <<override>> ToString() : string
+}
+class Circlet {
+    + Circlet()
+    + <<override>> ToString() : string
+}
+class Rectanglet {
+    + Rectanglet()
+    + <<override>> ToString() : string
+}
+class Ellipset {
+    + Ellipset()
+    + <<override>> ToString() : string
+}
+class Linet {
+    + Linet()
+    + <<override>> ToString() : string
+}
+class Polylinet {
+    + Polylinet()
+    + <<override>> ToString() : string
+}
+class Polygont {
+    + Polygont()
+    + <<override>> ToString() : string
+}
+class Patht {
+    + Patht()
+    + <<override>> ToString() : string
+}
+Shape o-> "rnd" Random
+Shape <|-- Start
+Shape <|-- End
+Shape <|-- Empty
+Shape <|-- Circlet
+Shape <|-- Rectanglet
+Shape <|-- Ellipset
+Shape <|-- Linet
+Shape <|-- Polylinet
+Shape <|-- Polygont
+Shape <|-- Patht
+@enduml

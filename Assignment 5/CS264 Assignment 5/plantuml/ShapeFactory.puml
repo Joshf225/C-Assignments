@@ -1,0 +1,5 @@
+@startuml
+class ShapeFactory {
+    + {static} GetShapes(shapeType:string) : Shapes
+}
+@enduml

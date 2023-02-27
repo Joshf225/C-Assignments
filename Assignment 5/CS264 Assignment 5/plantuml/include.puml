@@ -1,0 +1,14 @@
+@startuml
+!include .\\Assignment2.puml
+!include .\\Command.puml
+!include .\\Memento.puml
+!include .\\Program.puml
+!include .\\Shape.puml
+!include .\\ShapeA2.puml
+!include .\\ShapeFactory.puml
+!include .\\ShapeFactoryA2.puml
+!include .\\Shapes.puml
+!include .\\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net6.0\CS264 Assignment 5.AssemblyInfo.puml
+!include .\\obj\Debug\net6.0\CS264 Assignment 5.GlobalUsings.g.puml
+@enduml

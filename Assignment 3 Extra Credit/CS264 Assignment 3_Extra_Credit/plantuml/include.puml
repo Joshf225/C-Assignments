@@ -1,0 +1,11 @@
+@startuml
+!include .\\CaretakerClass.puml
+!include .\\Memento.puml
+!include .\\OriginatorClass.puml
+!include .\\Program.puml
+!include .\\Shapes.puml
+!include .\\ShapesClass.puml
+!include .\\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.puml
+!include .\\obj\Debug\net6.0\CS264 Assignment 3.AssemblyInfo.puml
+!include .\\obj\Debug\net6.0\CS264 Assignment 3.GlobalUsings.g.puml
+@enduml

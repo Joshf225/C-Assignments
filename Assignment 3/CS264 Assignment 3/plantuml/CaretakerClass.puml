@@ -1,0 +1,15 @@
+@startuml
+class Caretaker {
+    + addMemento(m:Memento) : void
+    + getMemento(i:int) : Memento
+    + undoMemento(canvas:Stack<string>) : void
+    + redoMemento(canvas:Stack<string>) : void
+}
+class "List`1"<T> {
+}
+class "Stack`1"<T> {
+}
+Caretaker o-> "canvas<Memento>" "List`1"
+Caretaker o-> "history<string>" "Stack`1"
+Caretaker o-> "redolist<string>" "Stack`1"
+@enduml

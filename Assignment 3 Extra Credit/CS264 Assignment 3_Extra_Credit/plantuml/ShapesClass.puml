@@ -1,0 +1,7 @@
+@startuml
+class ShapesClass {
+    + temp_shape : string <<get>> <<set>>
+    + ShapesClass(temp_shape:string)
+    + getDetails() : string
+}
+@enduml

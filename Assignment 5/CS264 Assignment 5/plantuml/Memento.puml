@@ -1,0 +1,32 @@
+@startuml
+class Caretaker {
+    + addMemento(m:Memento) : void
+    + getMemento(i:int) : Memento
+    + undoMemento(canvas:Stack<Shape>) : void
+    + redoMemento(canvas:Stack<Shape>) : void
+}
+class Memento {
+    + Memento(shapesClass:ShapesClass)
+    + getDetails() : Shape
+}
+class Originator {
+    + createMemento() : Memento
+    + setMemento(memento:Memento) : void
+    + getDetails() : Shape
+}
+class ShapesClass {
+    + ShapesClass(temp_shape:Shape)
+    + getDetails() : Shape
+}
+class "List`1"<T> {
+}
+class "Stack`1"<T> {
+}
+Caretaker o-> "canvas<Memento>" "List`1"
+Caretaker o-> "history<Shape>" "Stack`1"
+Caretaker o-> "redolist<Shape>" "Stack`1"
+Memento --> "shapesClass" ShapesClass
+Memento --> "canvas" ShapesClass
+Originator --> "shapesClass" ShapesClass
+ShapesClass --> "temp_shape" Shape
+@enduml

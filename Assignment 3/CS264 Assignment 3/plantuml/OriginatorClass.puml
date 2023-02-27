@@ -1,0 +1,8 @@
+@startuml
+class Originator {
+    + createMemento() : Memento
+    + setMemento(memento:Memento) : void
+    + getDetails() : string
+}
+Originator --> "shapesClass" ShapesClass
+@enduml

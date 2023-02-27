@@ -1,0 +1,14 @@
+@startuml
+class Program {
+    {static} Main(args:string[]) : void
+    {static} printHome() : void
+    {static} PrintHome() : void
+    {static} printCommands() : void
+    {static} printHelp() : void
+    + {static} printCanvas(canv:List<Shape>) : string
+    + {static} PrintStack(canvas:Stack<Shape>) : string
+    + {static} createSVG(shape:LinkedList<ShapeA2>) : string
+    + {static} deleteShape(shape:LinkedList<ShapeA2>, index:int) : void
+    + {static} updateList(shape:LinkedList<ShapeA2>, index:int) : void
+}
+@enduml

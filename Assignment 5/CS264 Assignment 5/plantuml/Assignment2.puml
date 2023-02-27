@@ -1,0 +1,17 @@
+@startuml
+class ShapefromA2 {
+    + style(stroke:string, fill:string, index:int, name:string) : void
+    + setStroke(x:string) : void
+    + setFill(x:string) : void
+    + getIndex() : int
+    + getName() : string
+    + getRectangle() : string
+    + getCircle() : string
+    + getEllipse() : string
+    + getLine() : string
+    + getPolyline() : string
+    + getPolygon() : string
+    + getPath() : string
+}
+ShapefromA2 o-> "rnd" Random
+@enduml

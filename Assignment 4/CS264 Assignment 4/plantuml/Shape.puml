@@ -1,0 +1,51 @@
+@startuml
+abstract class Shape {
+    + <<override>> ToString() : string
+}
+class Start {
+    + Start()
+    + <<override>> ToString() : string
+}
+class End {
+    + End()
+    + <<override>> ToString() : string
+}
+class Empty {
+    + Empty()
+    + <<override>> ToString() : string
+}
+class Circle {
+    + Circle()
+    + <<override>> ToString() : string
+}
+class Rectangle {
+    + Rectangle()
+    + <<override>> ToString() : string
+}
+class Ellipse {
+    + Ellipse()
+    + <<override>> ToString() : string
+}
+class Line {
+    + Line()
+    + <<override>> ToString() : string
+}
+class Polyline {
+    + Polyline()
+    + <<override>> ToString() : string
+}
+class Polygon {
+    + Polygon()
+    + <<override>> ToString() : string
+}
+Shape o-> "rnd" Random
+Shape <|-- Start
+Shape <|-- End
+Shape <|-- Empty
+Shape <|-- Circle
+Shape <|-- Rectangle
+Shape <|-- Ellipse
+Shape <|-- Line
+Shape <|-- Polyline
+Shape <|-- Polygon
+@enduml

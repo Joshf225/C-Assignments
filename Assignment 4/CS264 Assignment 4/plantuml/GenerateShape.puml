@@ -1,0 +1,11 @@
+@startuml
+class GenerateShape {
+    + _shape : string <<get>> <<set>>
+    + GenerateShape(s:Shape, c:Canvas)
+    + Do() : void
+    + Undo() : void
+}
+ICommand <|-- GenerateShape
+GenerateShape --> "canvas" Canvas
+GenerateShape --> "shape" Shape
+@enduml
